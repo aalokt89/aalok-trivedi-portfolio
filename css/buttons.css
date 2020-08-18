@@ -1,0 +1,38 @@
+@import 'global-styles.css';
+
+/* Button styles -------------------------------------------------*/
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Inter', -apple-system, sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 0 var(--medium);
+	height: 48px;
+	border-radius: var(--radius);
+}
+
+.button__primary {
+	color: var(--light);
+	background: var(--primary-navy);
+}
+.button__primary:hover {
+	filter: brightness(130%);
+}
+.button__primary:active {
+	filter: brightness(90%);
+}
+
+.button__outline {
+	color: var(--primary-navy);
+	border: 2px solid var(--primary-navy);
+}
+.button__outline:hover {
+	background-color: var(--primary-navy);
+	color: var(--light);
+}

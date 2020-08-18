@@ -1,0 +1,66 @@
+@import 'global-styles.css';
+
+/* Project section-------------------------------------------------------- */
+
+#project-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0;
+}
+
+.project-cover {
+	display: grid;
+	gap: var(--large);
+	padding: var(--large);
+	color: var(--dark);
+}
+
+.project-cover .project-img-container {
+	background: var(--primary-navy-300);
+	height: 400px;
+}
+
+.project-cover h2 {
+	margin-top: 0;
+	margin-bottom: var(--small);
+}
+.project-cover p {
+	margin: 0;
+	line-clamp: 2;
+}
+
+.p1 {
+	background: #a5efd3;
+}
+
+.p2 {
+	background: #328df9;
+	color: var(--light);
+}
+.p2 p,
+.p2 h2 {
+	color: var(--light);
+}
+
+.p3 {
+	background: #edd16f;
+}
+.p4 {
+	background: #8a49dc;
+}
+.p4 p,
+.p4 h2 {
+	color: var(--light);
+}
+
+.p5 {
+	background: #56a2e8;
+}
+.p5 p,
+.p5 h2 {
+	color: var(--light);
+}
+
+.p6 {
+	background: #f8f8f8;
+}
