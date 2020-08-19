@@ -1,7 +1,9 @@
 @import 'global-styles.css';
 @import 'navigation.css';
-@import 'projects.css';
+@import 'projects-section.css';
 @import 'buttons.css';
+@import 'form.css';
+@import 'social.css';
 
 html {
 	box-sizing: border-box;
@@ -37,15 +39,17 @@ h6 {
 h1 {
 	font-size: 40px;
 	line-height: 130%;
-	letter-spacing: 0.25px;
+	letter-spacing: 0.1px;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 28px;
 	letter-spacing: 0.25px;
+	margin: 16px 0 16px 0;
 }
 h3 {
 	font-size: 20px;
+	margin: 8px 0 16px 0;
 }
 
 h4 {
@@ -74,8 +78,9 @@ small {
 
 p {
 	font-size: 16px;
-	line-height: 160%;
+	line-height: 165%;
 	letter-spacing: 0.2px;
+	margin: 8px 0 24px 0;
 }
 
 small {
@@ -98,12 +103,17 @@ a {
 	font-weight: 600;
 }
 
+ul {
+	padding: 0;
+}
+
 /* Intro section-------------------------------------------------------- */
 #intro-header {
-	display: flex;
+	/* display: flex; */
 	position: fixed;
 	flex-direction: column;
 	padding: var(--x-large);
+	padding-top: 165px;
 	justify-content: center;
 	height: 100vh;
 	width: 556px;
@@ -127,4 +137,25 @@ a {
 
 .main-content {
 	margin-left: 556px;
+}
+
+.text-block-container {
+	width: 100%;
+	max-width: 656px;
+}
+
+/* About section-------------------------------------------------------- */
+
+#about-me,
+#contact-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: var(--x-large);
+}
+
+#about-me {
+	background: rgba(47, 195, 203, 0.05);
 }

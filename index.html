@@ -15,11 +15,23 @@
 
 	<body>
 		<!-- Navigation ---------------------------------------- -->
-		<nav>
+		<nav id="main-nav">
 			<ul>
-				<li><a href="#project-section">My Work</a></li>
-				<li><a href="#about-section">About Me</a></li>
-				<li><a href="#contact-section">Contact Me</a></li>
+				<li>
+					<a href="#my-work" class="nav-item active"
+						><span class="nav-icon"><img src="images/icons/work-24.svg" /></span> Work</a
+					>
+				</li>
+				<li>
+					<a href="#about-me" class="nav-item"
+						><span class="nav-icon"><img src="images/icons/about-24.svg" /></span>About Me</a
+					>
+				</li>
+				<li>
+					<a href="#contact-me" class="nav-item"
+						><span class="nav-icon"><img src="images/icons/email-24.svg" /></span>Contact Me</a
+					>
+				</li>
 			</ul>
 		</nav>
 
@@ -36,25 +48,18 @@
 				I solve human problems with simple, elegant, and beautiful solutions.
 			</h2>
 
-			<a href="#contact-section" class="button button__outline">Let's work together</a>
-
-			<ul id="social-links">
-				<li><a href="#">LinkedIn</a></li>
-				<li><a href="#">Dribbble</a></li>
-				<li><a href="#">Behance</a></li>
-				<li><a href="#">Logopond</a></li>
-			</ul>
+			<a href="#contact-me" class="button button__outline">Let's work together</a>
 		</header>
 
 		<div class="main-content">
 			<!-- Projects---------------------------------------- -->
 
-			<section id="project-section" class="project-section">
+			<section id="my-work" class="project-section">
 				<div class="project-cover p1">
 					<div class="project-img-container"></div>
 
 					<div class="title-block">
-						<h2>Hinge</h2>
+						<h3>Hinge</h3>
 						<p>Designing a dating app to make connecting to humans feel...human.</p>
 					</div>
 				</div>
@@ -63,7 +68,7 @@
 					<div class="project-img-container"></div>
 
 					<div class="title-block">
-						<h2>Dc Metro</h2>
+						<h3>DC Metro</h3>
 						<p>
 							How do you design for preparedness and confidence? Improving the DC Metro app for a
 							post-COVID-19 world.
@@ -75,7 +80,7 @@
 					<div class="project-img-container"></div>
 
 					<div class="title-block p3">
-						<h2>Post Hawk</h2>
+						<h3>Post Hawk</h3>
 						<p>Helping businesses track and analyze their shipping problem areas.</p>
 					</div>
 				</div>
@@ -84,7 +89,7 @@
 					<div class="project-img-container"></div>
 
 					<div class="title-block">
-						<h2>Ayuda</h2>
+						<h3>Ayuda</h3>
 						<p>
 							Redesigning a nonprofit that helps immigrants gain access to legal, social, and language
 							services.
@@ -96,7 +101,7 @@
 					<div class="project-img-container"></div>
 
 					<div class="title-block">
-						<h2>Federal Trade Commision</h2>
+						<h3>Federal Trade Commision</h3>
 						<p>Redesigning the FTC website to to better serve their target audiences.</p>
 					</div>
 				</div>
@@ -104,8 +109,8 @@
 				<div class="project-cover p6">
 					<div class="project-img-container"></div>
 
-					<div class="titl-block">
-						<h2>Bag & acessory Kiosk</h2>
+					<div class="title-block">
+						<h3>Bag & acessory Kiosk</h3>
 						<p>
 							Designing a point-of-sales tool to help customers customize and order their product, right
 							from the store.
@@ -116,60 +121,140 @@
 
 			<!-- About me ---------------------------------------- -->
 
-			<section id="about-section">
-				<h2>About will go here</h2>
-				<p>
-					about me blah blah blah
-				</p>
+			<section id="about-me">
+				<div class="text-block-container">
+					<img src="" class="aalok-headshot" alt="Aalok Trivedi: UX Designer" />
+
+					<h2>About Me</h2>
+					<p>
+						Tortor habitasse vestibulum sit dapibus ullamcorper. Vitae at posuere aliquam maecenas. Praesent
+						id at non enim dui tellus nunc lectus. Imperdiet feugiat gravida semper cursus in massa amet ac
+						nisi. Imperdiet lobortis sed enim potenti aliquam volutpat elementum. Id natoque aliquet
+						pulvinar sociis. Sed pellentesque porttitor arcu, quisque eu massa scelerisque consectetur.
+						Purus semper viverra sit risus commodo eu condimentum justo, morbi. Integer sit a habitasse
+						scelerisque adipiscing porta elit.
+					</p>
+					<p>
+						Eu aliquet a, sed lorem. Tortor diam ipsum id pellentesque tellus mauris. Massa vitae cum
+						rhoncus dui posuere. Mi nunc lobortis amet lobortis sed. Id sit pellentesque ut elementum.
+						Volutpat tincidunt sem amet tortor justo, posuere nullam. Pellentesque elit nulla aliquam in
+						tempor vitae feugiat tortor. Id diam donec duis tincidunt quam ultrices sapien quis lacus.
+						Ultrices cras vitae, purus amet justo, interdum. Nam felis consequat et nibh. Egestas ultrices
+						neque molestie euismod neque auctor odio. Quis facilisis aliquet dictumst bibendum sed dolor eu.
+						Massa dolor suspendisse volutpat fermentum.
+					</p>
+
+					<ul class="social-section">
+						<li>
+							<a href="https://www.linkedin.com/in/aalok-trivedi/" target="_blank" class="social-link"
+								><span class="social-icon"
+									><img src="images/icons/linkedin-16.svg" alt="linkedIn icon" />
+								</span>
+								LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href="https://dribbble.com/aalok-trivedi" target="_blank" class="social-link"
+								><span class="social-icon"
+									><img src="images/icons/dribbble-16.svg" alt="Dribbble icon" />
+								</span>
+								Dribbble
+							</a>
+						</li>
+						<li>
+							<a href="#" class="social-link"
+								><span class="social-icon"
+									><img src="images/icons/behance-16.svg" target="_blank" alt="Behance icon" />
+								</span>
+								Behance
+							</a>
+						</li>
+						<li>
+							<a href="https://logopond.com/aalok89/profile/55213" target="_blank" class="social-link"
+								><span class="social-icon"
+									><img src="images/icons/logopond-16.svg" target="_blank" alt="Logopond icon" />
+								</span>
+								Logopond
+							</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- Contact me ---------------------------------------- -->
 
-			<section id="contact-section">
-				<h2>Contact will go here</h2>
+			<section id="contact-me">
+				<div class="text-block-container">
+					<h2>Let's build something great together!</h2>
+					<p>
+						I’m available for new projects, and I’m happy to answer any of your questions. Let’s work
+						together.
+					</p>
 
-				<form id="contact-form">
-					<div>
-						<label for="first-name">First Name</label>
-						<input
-							type="text"
-							id="first-name"
-							name="first-name"
-							required="required"
-							placeholder="Enter your first name"
-						/>
+					<form id="contact-form" class="form">
+						<div class="form__item">
+							<label for="first-name">First Name</label>
+							<input
+								class="form__input"
+								type="text"
+								id="first-last-name"
+								name="first-last-name"
+								required="required"
+								placeholder="Enter your first and last name"
+							/>
+							<span class="form__error">
+								Please enter your name. I'd love to know who I'm talking to!
+							</span>
+						</div>
 
-						<label for="last-name">Last Name</label>
-						<input
-							type="text"
-							id="last-name"
-							name="last-name"
-							required="required"
-							placeholder="Enter your last name"
-						/>
-					</div>
+						<div class="form__item">
+							<label for="email">Email Address</label>
+							<input
+								class="form__input"
+								type="email"
+								id="email"
+								name="email"
+								required="required"
+								placeholder="example@gmail.com"
+							/>
 
-					<div>
-						<label for="email">Email Address</label>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							required="required"
-							placeholder="example@gmail.com"
-						/>
-					</div>
+							<span class="form__error">
+								Please enter your email address so I can get back to you.
+							</span>
+						</div>
 
-					<label for="message">Message</label>
-					<textarea
-						id="message"
-						name="message"
-						rows="10"
-						required="required"
-						placeholder="Have any questions? Tell me more about you, your company, and your needs."
-					></textarea>
-				</form>
+						<div class="form__item">
+							<label for="message">Message</label>
+							<textarea
+								id="message"
+								name="message"
+								class="form__input"
+								required="required"
+								placeholder="Have any questions? Tell me more about you, your company, and your needs."
+							></textarea>
+
+							<span class="form__error">
+								Please enter a message. I'd love you know more aboout you and your needs.
+							</span>
+						</div>
+						<button class="button button__primary" type="submit">Get In Touch</button>
+					</form>
+				</div>
 			</section>
 		</div>
+
+		<!-- navigation script -->
+		<script>
+			// Add active class to the current button (highlight it)
+			var header = document.getElementById('main-nav');
+			var navItems = header.getElementsByClassName('nav-item');
+			for (var i = 0; i < navItems.length; i++) {
+				navItems[i].addEventListener('click', function () {
+					var current = document.getElementsByClassName('active');
+					current[0].className = current[0].className.replace(' active', '');
+					this.className += ' active';
+				});
+			}
+		</script>
 	</body>
 </html>

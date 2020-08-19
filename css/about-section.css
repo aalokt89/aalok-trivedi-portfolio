@@ -1,0 +1,10 @@
+@import 'global-styles.css';
+
+#about-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: var(--x-large);
+}

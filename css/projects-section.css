@@ -2,7 +2,7 @@
 
 /* Project section-------------------------------------------------------- */
 
-#project-section {
+#my-work {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 0;
@@ -11,16 +11,15 @@
 .project-cover {
 	display: grid;
 	gap: var(--large);
-	padding: var(--large);
+	padding: 48px;
 	color: var(--dark);
 }
 
 .project-cover .project-img-container {
-	background: var(--primary-navy-300);
 	height: 400px;
 }
 
-.project-cover h2 {
+.project-cover h3 {
 	margin-top: 0;
 	margin-bottom: var(--small);
 }
@@ -34,33 +33,33 @@
 }
 
 .p2 {
-	background: #328df9;
+	background: #2f58e8;
 	color: var(--light);
 }
 .p2 p,
-.p2 h2 {
+.p2 h3 {
 	color: var(--light);
 }
 
 .p3 {
-	background: #edd16f;
+	background: #f1cb82;
 }
 .p4 {
-	background: #8a49dc;
+	background: #64207f;
 }
 .p4 p,
-.p4 h2 {
+.p4 h3 {
 	color: var(--light);
 }
 
 .p5 {
-	background: #56a2e8;
+	background: #2477ca;
 }
 .p5 p,
-.p5 h2 {
+.p5 h3 {
 	color: var(--light);
 }
 
 .p6 {
-	background: #f8f8f8;
+	background: #eee;
 }

@@ -1,0 +1,42 @@
+.social-section {
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: var(--x-large);
+}
+
+.social-section li {
+	list-style: none;
+	padding-right: var(--small);
+}
+
+.social-section li:last-child {
+	padding-right: 0;
+}
+
+.social-link {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: 'Inter', -apple-system, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: var(--small) var(--base);
+	color: var(--text-body);
+	text-decoration: none;
+	height: 36px;
+	background: rgba(38, 43, 98, 0);
+	opacity: 0.6;
+	border-radius: var(--radius);
+	transition: opacity 0.3s, background 0.3s;
+}
+
+.social-link:hover,
+.social-link:active {
+	opacity: 1;
+	background: rgba(38, 43, 98, 0.03);
+}
+
+.social-section .social-icon {
+	padding-right: var(--small);
+}

@@ -7,8 +7,8 @@ nav {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	padding: var(--x-large) var(--x-large) 0 var(--x-large);
-	background: yellow;
+	padding: var(--large) var(--x-large) 0 var(--x-large);
+	/* background: yellow; */
 	margin: 0;
 }
 
@@ -22,18 +22,32 @@ nav ul li {
 	margin: 0;
 }
 
-nav li a {
-	background: pink;
-	width: 100%;
-	height: 100%;
+.nav-item {
+	/* background: pink; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	font-family: 'Inter';
 	font-size: 14px;
 	font-weight: 500;
 	color: var(--primary-navy);
 	padding: var(--small);
 	padding-bottom: var(--base);
-	border-bottom: 2px solid var(--primary-navy);
+
 	opacity: 0.6;
 	text-decoration: none;
 	margin-right: var(--medium);
+	transition: opacity 0.2s;
+}
+
+.nav-icon {
+	margin-right: var(--small);
+}
+
+.nav-item:hover {
+	opacity: 1;
+}
+.active {
+	opacity: 1;
+	border-bottom: 2px solid var(--primary-navy);
 }
