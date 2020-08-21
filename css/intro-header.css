@@ -41,8 +41,9 @@
 /* Small screens and tablet landscape */
 @media screen and (max-width: 1100px) {
 	#intro-header {
-		position: none;
+		position: static;
 		height: 90vh;
+		width: 100%;
 		padding-top: var(--x-large);
 	}
 
