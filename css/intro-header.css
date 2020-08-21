@@ -29,10 +29,6 @@
 	align-self: flex-start;
 }
 
-.main-content {
-	margin-left: 556px;
-}
-
 .text-block-container {
 	width: 100%;
 	max-width: 656px;
@@ -41,14 +37,26 @@
 /* Small screens and tablet landscape */
 @media screen and (max-width: 1100px) {
 	#intro-header {
-		position: static;
+		position: initial;
 		height: 90vh;
 		width: 100%;
-		padding-top: var(--x-large);
+		padding: var(--x-large);
 	}
 
 	.main-content {
 		margin: 0;
-		width: 100%;
+		width: initial;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#intro-header {
+		height: initial;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#intro-header {
+		padding: 48px var(--medium);
 	}
 }

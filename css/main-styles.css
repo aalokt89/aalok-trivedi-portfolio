@@ -7,11 +7,15 @@
 @import 'social.css';
 
 html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
 
@@ -108,7 +112,9 @@ ul {
 	padding: 0;
 }
 
-/* Intro section-------------------------------------------------------- */
+.main-content {
+	margin-left: 556px;
+}
 
 /* About section-------------------------------------------------------- */
 
@@ -124,4 +130,37 @@ ul {
 
 #about-me {
 	background: rgba(47, 195, 203, 0.05);
+}
+
+/* Media queries---------------------------------- */
+
+@media screen and (max-width: 1100px) {
+	.main-content {
+		margin: 0;
+		width: initial;
+		margin-bottom: 128px;
+	}
+}
+
+/* Tablet portrait */
+@media screen and (max-width: 768px) {
+	nav {
+		padding: 0;
+	}
+	.main-content {
+		margin-bottom: var(--x-large);
+	}
+
+	#about-me,
+	#contact-me {
+		height: auto;
+		justify-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#about-me,
+	#contact-me {
+		padding: 48px var(--medium);
+	}
 }

@@ -1,17 +1,20 @@
 .social-section {
 	display: inline-flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-shrink: 1;
 	width: 100%;
 	margin-top: var(--x-large);
 }
 
 .social-section li {
 	list-style: none;
-	padding-right: var(--small);
+	margin-right: var(--small);
 }
 
 .social-section li:last-child {
-	padding-right: 0;
+	margin-right: 0;
 }
 
 .social-link {
