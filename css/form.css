@@ -81,7 +81,7 @@ button {
 	visibility: visible;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 	/* mobile type */
 	button {
 		width: 100%;

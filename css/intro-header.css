@@ -1,27 +1,27 @@
 @import 'global-styles.css';
 
 #intro-header {
-	/* display: flex; */
+	display: flex;
+	flex-direction: column;
 	position: fixed;
-
-	/* flex-direction: column; */
-	padding: var(--x-large);
+	padding: 48px;
 	padding-top: 165px;
-	justify-content: center;
 	height: 100%;
-	width: 556px;
-	background: var(--light) url('../images/aalok-hello-illo2.svg') bottom left no-repeat;
+	width: 420px;
+	background: var(--light) url('../images/aalok-hello-illo.svg') bottom left no-repeat;
 	background-size: 300px;
 	box-shadow: 4px 0px 32px rgba(19, 22, 70, 0.07);
 }
 
 #intro-header h1 {
-	margin-bottom: 24px;
+	font-size: 28px;
+	margin-bottom: 16px;
 	margin-top: 0p;
 }
 
 #intro-header h2 {
-	margin-bottom: 48px;
+	font-size: 20px;
+	margin-bottom: 32px;
 	margin-top: 0;
 }
 
@@ -35,23 +35,27 @@
 }
 
 /* Small screens and tablet landscape */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
 	#intro-header {
 		position: initial;
-		height: 90vh;
+		height: 900px;
 		width: 100%;
 		padding: var(--x-large);
 	}
 
-	.main-content {
-		margin: 0;
-		width: initial;
+	#intro-header h1 {
+		font-size: 48px;
+		margin-bottom: 24px;
+	}
+	#intro-header h2 {
+		font-size: 34px;
+		margin-bottom: var(large);
 	}
 }
 
 @media screen and (max-width: 600px) {
 	#intro-header {
-		height: initial;
+		height: 90vh;
 	}
 }
 
@@ -62,5 +66,12 @@
 
 	#intro-header .button {
 		width: 100%;
+	}
+
+	#intro-header h1 {
+		font-size: 34px;
+	}
+	#intro-header h2 {
+		font-size: 20px;
 	}
 }
