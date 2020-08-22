@@ -59,4 +59,8 @@
 	#intro-header {
 		padding: 48px var(--medium);
 	}
+
+	#intro-header .button {
+		width: 100%;
+	}
 }

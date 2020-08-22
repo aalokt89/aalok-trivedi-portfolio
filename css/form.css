@@ -51,6 +51,7 @@ form {
 textarea {
 	resize: none;
 	min-height: 240px;
+	line-height: 170%;
 }
 
 button {
@@ -78,4 +79,11 @@ button {
 
 .form__input--error + .form__error {
 	visibility: visible;
+}
+
+@media screen and (max-width: 480px) {
+	/* mobile type */
+	button {
+		width: 100%;
+	}
 }

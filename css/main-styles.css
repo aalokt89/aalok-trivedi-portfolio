@@ -159,6 +159,13 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+	/* mobile type */
+	h1 {
+		font-size: 34px;
+	}
+	h2 {
+		font-size: 24px;
+	}
 	#about-me,
 	#contact-me {
 		padding: 48px var(--medium);
