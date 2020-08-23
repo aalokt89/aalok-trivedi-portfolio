@@ -132,13 +132,21 @@ ul {
 	background: rgba(47, 195, 203, 0.05);
 }
 
+#contact-me {
+	height: auto;
+	padding-bottom: 200px;
+	background-image: url('../images/aalok-contact-illo.svg');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 500px;
+}
 /* Media queries---------------------------------- */
 
 @media screen and (max-width: 1100px) {
 	.main-content {
 		margin: 0;
 		width: initial;
-		margin-bottom: 128px;
+		margin-bottom: 64px;
 	}
 }
 
@@ -147,9 +155,9 @@ ul {
 	nav {
 		padding: 0;
 	}
-	.main-content {
+	/* .main-content {
 		margin-bottom: var(--x-large);
-	}
+	} */
 
 	#about-me,
 	#contact-me {
@@ -169,5 +177,10 @@ ul {
 	#about-me,
 	#contact-me {
 		padding: 48px var(--medium);
+	}
+
+	#contact-me {
+		background-size: 95%;
+		padding-bottom: 128px;
 	}
 }

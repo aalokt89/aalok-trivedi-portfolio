@@ -49,11 +49,11 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	#intro-header {
 		height: initial;
 	}
-}
+} */
 
 @media screen and (max-width: 480px) {
 	#intro-header {
