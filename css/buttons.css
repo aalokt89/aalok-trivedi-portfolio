@@ -12,9 +12,10 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: capitalize;
-	padding: 0 var(--medium);
+	padding: 12px var(--medium);
 	height: 48px;
 	border-radius: var(--radius);
+	transition: all 0.3s ease-in-out;
 }
 
 .button__primary {
