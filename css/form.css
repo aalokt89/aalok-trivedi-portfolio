@@ -29,10 +29,10 @@ form {
 	margin-bottom: var(--small);
 	border-radius: var(--radius);
 	border: 1 px solid var(--input);
-	background: var(--input);
+	background-color: var(--input);
 	outline: none;
 	box-shadow: 0 0 0 4px rgba(216, 220, 247, 0);
-	transition: background 0.4s, border 0.4s, color 0.2s, box-shadow 0.4;
+	transition: all 0.4s ease-in-out;
 }
 .form__input::placeholder {
 	color: var(--text-subtle);
@@ -81,7 +81,7 @@ button {
 	visibility: visible;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 	/* mobile type */
 	button {
 		width: 100%;
