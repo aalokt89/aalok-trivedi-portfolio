@@ -114,9 +114,6 @@ ul {
 
 .main-content {
 	margin-left: 420px;
-
-	margin-bottom: 128px;
-
 }
 
 /* About section-------------------------------------------------------- */
@@ -151,13 +148,11 @@ ul {
 		width: initial;
 
 		margin-bottom: 64px;
-
 	}
 }
 
 /* Tablet portrait */
 @media screen and (max-width: 768px) {
-
 	nav {
 		padding: 0;
 	}
