@@ -21,7 +21,7 @@
 	flex-direction: row;
 	align-items: center;
 	font-family: 'Inter', -apple-system, sans-serif;
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: 400;
 	padding: var(--small) var(--base);
 	color: var(--text-body);
