@@ -104,31 +104,6 @@
 	}
 }
 
-/* small screens */
-/* @media screen and (max-width: 1200px) {
-	#my-work {
-		grid-template-columns: 1fr;
-	}
-
-} */
-
-/* @media screen and (max-width: 1100px) {
-
-}
-
-	#my-work {
-		grid-template-columns: repeat(2, 1fr);
-	}
-} */
-
-/* tablets */
-/* @media screen and (max-width: 768px) {
-	#my-work {
-		display: block;
-		width: initial;
-	}
-} */
-
 /* small tablets */
 @media screen and (max-width: 600px) {
 	/* #my-work {
