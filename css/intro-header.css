@@ -55,11 +55,6 @@
 	align-self: flex-start;
 }
 
-.text-block-container {
-	width: 100%;
-	max-width: 656px;
-}
-
 /* Small screens and tablet landscape */
 @media screen and (max-width: 1024px) {
 	#intro-header {

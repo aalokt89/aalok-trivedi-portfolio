@@ -2,7 +2,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 486px;
+	max-width: 100%;
 	margin: 0 auto;
 	margin-top: 48px;
 	color: var(--text-body);
@@ -61,6 +61,12 @@ button {
 	align-self: center;
 }
 
+.name-email-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 24px;
+}
+
 /* Error states */
 
 .form__input--error {
@@ -80,7 +86,12 @@ button {
 .form__input--error + .form__error {
 	visibility: visible;
 }
-
+@media screen and (max-width: 768px) {
+	.name-email-container {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+}
 @media screen and (max-width: 600px) {
 	/* mobile type */
 	button {

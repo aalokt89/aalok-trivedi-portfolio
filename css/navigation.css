@@ -49,6 +49,22 @@ nav ul li {
 	border-bottom: 2px solid var(--primary-navy);
 }
 
+.nav-item::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+}
+
+.nav-work::before {
+	background: url('../images/icons/work-24.svg');
+}
+.nav-about::before {
+	background: url('../images/icons/about-24.svg');
+}
+.nav-contact::before {
+	background: url('../images/icons/email-24.svg');
+}
+
 /* Media queries */
 @media screen and (max-width: 1024px) {
 	nav {

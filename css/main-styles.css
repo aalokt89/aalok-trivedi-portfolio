@@ -118,6 +118,11 @@ ul {
 	margin-left: 420px;
 }
 
+.text-block-container {
+	width: 100%;
+	max-width: 656px;
+}
+
 /* About section-------------------------------------------------------- */
 
 #about-me,
@@ -131,11 +136,27 @@ ul {
 }
 
 #about-me {
-	background: rgba(47, 195, 203, 0.05);
+	/* background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%),
+		radial-gradient(var(--primary-navy-300) 2%, transparent 2%); */
+	background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%);
+	background-color: rgba(47, 195, 203, 0.05);
+	background-position: 0 0, 16px 16px;
+	background-size: 32px 32px;
+}
+
+.about-me-block {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: var(--medium);
+}
+
+.aalok-headshot {
+	width: 128px;
+	align-self: start;
 }
 
 #contact-me {
-	height: auto;
+	/* height: auto; */
 	padding-bottom: 200px;
 	background-image: url('../images/aalok-contact-illo.svg');
 	background-repeat: no-repeat;

@@ -18,19 +18,13 @@
 		<nav id="main-nav">
 			<ul>
 				<li>
-					<a href="/" class="nav-item active"
-						><span class="nav-icon"><img src="images/icons/work-24.svg" /></span> Work</a
-					>
+					<a href="/" class="nav-item active nav-work"> Work</a>
 				</li>
 				<li>
-					<a href="#about-me" class="nav-item"
-						><span class="nav-icon"><img src="images/icons/about-24.svg" /></span>About Me</a
-					>
+					<a href="#about-me" class="nav-item nav-about">About Me</a>
 				</li>
 				<li>
-					<a href="#contact-me" class="nav-item"
-						><span class="nav-icon"><img src="images/icons/email-24.svg" /></span>Contact Me</a
-					>
+					<a href="#contact-me" class="nav-item nav-contact">Contact Me</a>
 				</li>
 			</ul>
 		</nav>
@@ -42,9 +36,7 @@
 
 			<h1>Hello! My name is Aalok Trivedi, and I'm a UX Designer.</h1>
 
-			<h2 class="subtitle">
-				I solve human problems with simple, elegant, and beautiful solutions.
-			</h2>
+			<h2 class="subtitle">I solve human problems with simple, elegant, and beautiful solutions.</h2>
 
 			<a href="#contact-me" class="button button__outline">Let's work together</a>
 		</header>
@@ -158,18 +150,26 @@
 
 			<section id="about-me">
 				<div class="text-block-container">
-					<img src="" class="aalok-headshot" alt="Aalok Trivedi: UX Designer" />
+					<div class="about-me-block">
+						<img
+							src="images/aalok-trivedi-profilePic.png"
+							class="aalok-headshot"
+							alt="Aalok Trivedi: UX Designer"
+						/>
 
-					<h2>About Me</h2>
-					<p>
-						Welcome! I'm a User Experience Designer based in the D.C. area. I design goal-oriented,
-						human-centric digital solutions for iOS, Android, and Web applications.
-					</p>
-					<p>
-						To me, UX and design are more than trying to identify the users’ pain points/frustrations or
-						solving for X; it’s about truly understanding the users’ goals, behaviors, and motivations. Only
-						then, will you identify the real problem.
-					</p>
+						<div>
+							<h2>About Me</h2>
+							<p>
+								Welcome! I'm a User Experience Designer based in the D.C. area. I design goal-oriented,
+								human-centric digital solutions for iOS, Android, and Web applications.
+							</p>
+							<p>
+								To me, UX and design are more than trying to identify the users’ pain
+								points/frustrations or solving for X; it’s about truly understanding the users’ goals,
+								behaviors, and motivations. Only then, will you identify the real problem.
+							</p>
+						</div>
+					</div>
 
 					<ul class="social-section">
 						<li>
@@ -219,35 +219,37 @@
 					</p>
 
 					<form id="contact-form" class="form">
-						<div class="form__item">
-							<label for="first-name">First Name</label>
-							<input
-								class="form__input"
-								type="text"
-								id="first-last-name"
-								name="first-last-name"
-								required="required"
-								placeholder="Enter your first and last name"
-							/>
-							<span class="form__error">
-								Please enter your name. I'd love to know who I'm talking to!
-							</span>
-						</div>
+						<div class="name-email-container">
+							<div class="form__item">
+								<label for="first-name">First Name</label>
+								<input
+									class="form__input"
+									type="text"
+									id="first-last-name"
+									name="first-last-name"
+									required="required"
+									placeholder="Enter your first and last name"
+								/>
+								<span class="form__error">
+									Please enter your name. I'd love to know who I'm talking to!
+								</span>
+							</div>
 
-						<div class="form__item">
-							<label for="email">Email Address</label>
-							<input
-								class="form__input"
-								type="email"
-								id="email"
-								name="email"
-								required="required"
-								placeholder="example@gmail.com"
-							/>
+							<div class="form__item">
+								<label for="email">Email Address</label>
+								<input
+									class="form__input"
+									type="email"
+									id="email"
+									name="email"
+									required="required"
+									placeholder="example@gmail.com"
+								/>
 
-							<span class="form__error">
-								Please enter your email address so I can get back to you.
-							</span>
+								<span class="form__error">
+									Please enter your email address so I can get back to you.
+								</span>
+							</div>
 						</div>
 
 						<div class="form__item">
