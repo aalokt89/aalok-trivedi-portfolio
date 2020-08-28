@@ -10,7 +10,7 @@
 	/* justify-content: center; */
 	height: 100%;
 	width: 420px;
-	background: var(--light) url('../images/aalok-hello-illo2.svg') bottom left no-repeat;
+	background: var(--light) url('../images/aalok-hello-illo.svg') bottom left no-repeat;
 	background-size: 300px;
 
 	box-shadow: 4px 0px 32px rgba(19, 22, 70, 0.07);
@@ -92,7 +92,6 @@
 @media screen and (max-width: 480px) {
 	#intro-header {
 		padding: var(--large);
-		justify-content: center;
 	}
 	.intro-illo {
 		position: absolute;

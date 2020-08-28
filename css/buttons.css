@@ -18,12 +18,19 @@
 	transition: all 0.3s ease-in-out;
 }
 
+.button:hover {
+	transform: scale(1.05);
+}
+.button:active {
+	transform: scale(0.95);
+}
+
 .button__primary {
 	color: var(--light);
 	background: var(--primary-navy);
 }
 .button__primary:hover {
-	filter: brightness(130%);
+	filter: brightness(150%);
 }
 .button__primary:active {
 	filter: brightness(90%);
