@@ -42,6 +42,11 @@
 	margin-top: 0;
 	margin-bottom: var(--small);
 }
+.project-cover p {
+	font-size: 1.6rem;
+	line-height: 165%;
+	letter-spacing: 0.2px;
+}
 
 .title-block {
 	width: 100%;
@@ -52,39 +57,39 @@
 	line-clamp: 2;
 }
 
-.p1 {
+#project-1 {
 	background: #a5efd3;
 }
 
-.p2 {
+#project-2 {
 	background: #2f58e8;
 	color: var(--light);
 }
-.p2 p,
-.p2 h3 {
+#project-2 p,
+#project-2 h3 {
 	color: var(--light);
 }
 
-.p3 {
+#project-3 {
 	background: #f1cb82;
 }
-.p4 {
+#project-4 {
 	background: #64207f;
 }
-.p4 p,
-.p4 h3 {
+#project-4 p,
+#project-4 h3 {
 	color: var(--light);
 }
 
-.p5 {
+#project-5 {
 	background: #2477ca;
 }
-.p5 p,
-.p5 h3 {
+#project-5 p,
+#project-5 h3 {
 	color: var(--light);
 }
 
-.p6 {
+#project-6 {
 	background: #eee;
 }
 

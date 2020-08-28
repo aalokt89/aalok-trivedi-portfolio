@@ -84,11 +84,18 @@ small {
 }
 
 p {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	line-height: 165%;
 	letter-spacing: 0.2px;
 	margin: 8px 0 24px 0;
 }
+
+/* p {
+	font-size: 1.6rem;
+	line-height: 165%;
+	letter-spacing: 0.2px;
+	margin: 8px 0 24px 0;
+} */
 
 small {
 	font-size: 1.4rem;
@@ -107,7 +114,6 @@ small {
 a {
 	color: var(--secondary-turquoise);
 	text-decoration: underline;
-	font-weight: 600;
 }
 
 ul {
@@ -146,13 +152,17 @@ ul {
 
 .about-me-block {
 	display: grid;
-	grid-template-columns: auto 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: var(--medium);
 }
 
-.aalok-headshot {
-	width: 128px;
-	align-self: start;
+.image-block {
+	display: grid;
+	width: 120px;
+	height: 120px;
+}
+#aalok-headshot {
+	width: 100%;
 }
 
 #contact-me {
