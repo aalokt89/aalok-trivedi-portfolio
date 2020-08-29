@@ -18,7 +18,7 @@ form {
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 1.6rem;
-	margin-bottom: var(--small);
+	margin-bottom: var(--base);
 }
 
 .form__input {
