@@ -7,8 +7,6 @@
 @import 'social.css';
 
 html {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
 	font-size: 62.5%;
@@ -16,8 +14,6 @@ html {
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
 
@@ -114,9 +110,12 @@ small {
 a {
 	color: var(--secondary-turquoise);
 	text-decoration: underline;
+	transition: -webkit-filter 0.2s ease-in-out;
 	transition: filter 0.2s ease-in-out;
+	transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
 }
 a:hover {
+	-webkit-filter: brightness(85%);
 	filter: brightness(85%);
 }
 

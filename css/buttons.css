@@ -30,9 +30,11 @@
 	background: var(--primary-navy);
 }
 .button__primary:hover {
+	-webkit-filter: brightness(150%);
 	filter: brightness(150%);
 }
 .button__primary:active {
+	-webkit-filter: brightness(90%);
 	filter: brightness(90%);
 }
 

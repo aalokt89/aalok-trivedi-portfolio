@@ -34,6 +34,18 @@ form {
 	box-shadow: 0 0 0 4px rgba(216, 220, 247, 0);
 	transition: all 0.4s ease-in-out;
 }
+.form__input::-webkit-input-placeholder {
+	color: var(--text-subtle);
+}
+.form__input::-moz-placeholder {
+	color: var(--text-subtle);
+}
+.form__input:-ms-input-placeholder {
+	color: var(--text-subtle);
+}
+.form__input::-ms-input-placeholder {
+	color: var(--text-subtle);
+}
 .form__input::placeholder {
 	color: var(--text-subtle);
 }
