@@ -28,7 +28,7 @@ form {
 	padding: var(--base);
 	margin-bottom: var(--small);
 	border-radius: var(--radius);
-	border: 1 px solid var(--input);
+	border: 1px solid var(--input);
 	background-color: var(--input);
 	outline: none;
 	box-shadow: 0 0 0 4px rgba(216, 220, 247, 0);

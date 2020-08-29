@@ -10,7 +10,7 @@
 
 .project-cover {
 	display: grid;
-	grid-template-rows: 1fr auto;
+	grid-template-rows: 3fr 1fr;
 	gap: 0;
 	color: var(--dark);
 	text-decoration: none;
@@ -41,14 +41,9 @@
 	transform: scale(1.05);
 }
 
-.project-cover h3 {
+.title-block h3 {
 	margin-top: 0;
 	margin-bottom: var(--small);
-}
-.project-cover p {
-	font-size: 1.6rem;
-	line-height: 165%;
-	letter-spacing: 0.2px;
 }
 
 .title-block {
@@ -56,8 +51,15 @@
 	padding: 24px 48px 48px 48px;
 }
 .title-block p {
+	font-size: 1.6rem;
+	line-height: 165%;
+	letter-spacing: 0.2px;
 	margin: 0;
-	line-clamp: 2;
+}
+
+.title-block a {
+	margin: 0;
+	padding: 0;
 }
 
 #project-1 {
@@ -107,8 +109,11 @@
 	}
 
 	.project-cover-img {
-		max-width: 85%;
-		max-height: 85%;
+		max-width: 90%;
+		max-height: 90%;
+	}
+	.title-block {
+		padding: 48px 128px 128px 128px;
 	}
 }
 

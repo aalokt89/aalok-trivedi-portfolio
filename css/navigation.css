@@ -55,13 +55,13 @@ nav ul li {
 	height: 24px;
 }
 
-.nav-work::before {
+#nav-work::before {
 	background: url('../images/icons/work-24.svg');
 }
-.nav-about::before {
+#nav-about::before {
 	background: url('../images/icons/about-24.svg');
 }
-.nav-contact::before {
+#nav-contact::before {
 	background: url('../images/icons/email-24.svg');
 }
 
