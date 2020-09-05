@@ -1,0 +1,88 @@
+// #### colors #####
+
+//brand colors
+$color_primaryNavy: #262b62;
+$color_primaryNavy_100: #d8dcf7;
+$color_primaryNavy_300: #838bcf;
+
+$color_secondaryTurquoise: #2fc3cb;
+$color_secondaryTurquoise_100: #e3f7f8;
+$color_secondaryTurquoise_300: #8ee0e5;
+$color_secondaryTurquoise_700: #1c757a;
+$color_secondaryTurquoise_900: #134e51;
+
+$color_tertiaryMaize: #ffd05a;
+$color_tertiaryMaize_100: #fff9de;
+$color_tertiaryMaize_300: #ffe89c;
+$color_tertiaryMaize_700: #b7882d;
+$color_tertiaryMaize_900: #7a5011;
+
+$color_tertiaryTangerine: #f3715d;
+$color_tertiaryTangerine_100: #feedde;
+$color_tertiaryTangerine_300: #fbb99e;
+$color_tertiaryTangerine_700: #ae2e31;
+$color_tertiaryTangerine_900: #741123;
+
+$color_dark: #37394f;
+$color_light: #fafcfe;
+
+$color_success: #4ab976;
+$color_error: #d5464b;
+
+$color_input: #ecf1f4;
+
+// #### spacing #####
+$spacing_small: 0.8rem;
+$spacing_base: 1.6rem;
+$spacing_medium: 2.4rem;
+$spacing_large: 3.2rem;
+$spacing_xLarge: 6.4rem;
+
+$uiElement_height: 4.8rem;
+
+$radius: 8px;
+
+// #### Typography #####
+
+$fontStackSansSerif: 'Inter', --apple-system, helvetica, sans-serif;
+$fontStackSerif: 'Merriweather', 'inter', sans-serif;
+
+$fontFamily_heading: $fontStackSansSerif;
+$fontFamily_body: $fontStackSerif;
+
+$fontSize_paragraph: 2rem;
+$fontSize_body: 1.6rem;
+$fontSize_bodySmall: 1.6rem;
+$fontSize_caption: 1.4rem;
+$fontsize_overline: 1.2rem;
+
+$color_textBody: #4a4a68;
+$color_textSubtle: #8c8ca1;
+$color_textHeading: $color_dark;
+$color_textLink: $color_secondaryTurquoise;
+
+// #### UI Elements ####
+
+//buttons
+$button_fontFamily: $fontStackSansSerif;
+$button_fontSize: 1.6rem;
+$button_fontWeight: 600;
+$button_padding: 1.2rem $spacing_medium;
+$button_height: $uiElement_height;
+
+$button_bg: $color_secondaryTurquoise;
+$button_textColor: $color_light;
+
+$button_outline_bg: transparent;
+$button_outline_textColor: $button_bg;
+
+$button_borderWidth: 0.2rem;
+$button_borderColor: $button_bg;
+$button_border: $button_borderWidth solid $button_bg;
+
+//inputs
+$input_bg_default: $color-input;
+$input_border_default: 0.1rem solid rgba($color_primaryNavy, 0);
+$input_shadow_default: 0 0 0 4px rgba(216, 220, 247, 0);
+$input_placeholder: $color_textSubtle;
+$input_padding: $spacing_base;

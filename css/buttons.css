@@ -38,11 +38,11 @@
 	filter: brightness(90%);
 }
 
-.button__outline {
+.button--outline {
 	color: var(--primary-navy);
 	border: 2px solid var(--primary-navy);
 }
-.button__outline:hover {
+.button--outline:hover {
 	background-color: var(--primary-navy);
 	color: var(--light);
 }

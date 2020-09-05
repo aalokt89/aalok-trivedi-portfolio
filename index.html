@@ -12,47 +12,47 @@
 		/>
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/main-styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<!-- Navigation ---------------------------------------- -->
-		<nav id="main-nav">
-			<ul>
+		<nav id="nav">
+			<ul class="nav__navList">
 				<li>
-					<a id="nav-work" href="#my-work" class="nav-item active"> Work</a>
+					<a id="nav-work" href="#my-work" class="nav__navItem nav__navItem--active"> Work</a>
 				</li>
 				<li>
-					<a id="nav-about" href="#about-me" class="nav-item">About Me</a>
+					<a id="nav-about" href="#about-me" class="nav__navItem nav__navItem--active">About Me</a>
 				</li>
 				<li>
-					<a id="nav-contact" href="#contact-me" class="nav-item">Contact Me</a>
+					<a id="nav-contact" href="#contact-me" class="nav__navItem nav__navItem--active">Contact Me</a>
 				</li>
 			</ul>
 		</nav>
 
 		<!-- Intro Header ---------------------------------------- -->
 
-		<header id="intro-header">
+		<header id="introHeader">
 			<a id="logo" href="/"><img src="images/aalok_logo.svg" alt="Aalok Trivedi Logo" /></a>
 
 			<h1>Hello! My name is Aalok Trivedi, and I'm a UX Designer.</h1>
 
 			<h2 class="subtitle">I solve human problems with simple, elegant, and beautiful solutions.</h2>
 
-			<a href="#contact-me" class="button button__outline">Let's work together</a>
+			<a href="#contact-me" class="button button--outline">Let's work together</a>
 		</header>
 
-		<main class="main-content">
+		<main class="mainContent">
 			<!-- Projects---------------------------------------- -->
 
-			<section id="my-work" class="project-section container-row">
-				<a href="#" id="project-1" class="project-cover">
-					<div class="project-img-container">
+			<section id="my-work" class="projectSection containerRow">
+				<a href="#" id="project-1" class="projectSection__cover">
+					<div class="projectSection__imgContainer">
 						<img
-							class="project-cover-img"
+							class="projectSection__coverImg"
 							src="images/project-images/covers/hinge_cover.png"
 							alt="Hinge App"
 						/>
@@ -64,8 +64,8 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-2" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-2" class="projectSection__cover">
+					<div class="projectSection__imgContainer">
 						<img
 							class="project-cover-img"
 							src="images/project-images/covers/dc-metro-app-cover.png"
@@ -82,8 +82,8 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-3" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-3" class="projectSection__cover">
+					<div class="projectSection__imgContainer">
 						<img
 							class="project-cover-img"
 							src="images/project-images/covers/postHawk_cover.png"
@@ -97,8 +97,8 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-4" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-4" class="projectSection__cover">
+					<div class="projectSection__imgContainer">
 						<img
 							class="project-cover-img"
 							src="images/project-images/covers/ayuda-cover.png"
@@ -115,8 +115,8 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-5" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-5" class="projectSection__cover">
+					<div class="projectSection__imgContainer">
 						<img
 							class="project-cover-img"
 							src="images/project-images/covers/ftc-cover.png"
@@ -130,8 +130,8 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-6" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-6" class="projectSection__cover">
+					<div class="projectSection__imgContainer">
 						<img
 							class="project-cover-img"
 							src="images/project-images/covers/strypes-cover.png"

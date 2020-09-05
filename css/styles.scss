@@ -1,0 +1,25 @@
+html {
+	box-sizing: border-box;
+
+	font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@import './variables';
+@import './mixins';
+body {
+	font-family: $fontFamily_body;
+	font-size: $fontSize_body;
+	color: $color_textBody;
+}
+@import './typography';
+@import './uiElements';
+@import './navigation';
+@import './introHeader';
+@import './projectSection';
+@import './aboutSection';
+@import './contactSection';

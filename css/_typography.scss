@@ -1,0 +1,70 @@
+//headings
+h1,
+h2,
+h3,
+h4 {
+	font-family: $fontFamily_heading;
+	font-weight: 800;
+	color: $color_textHeading;
+	line-height: 140%;
+}
+
+h1 {
+	font-size: 6rem;
+	line-height: 120%;
+	letter-spacing: -0.08rem;
+}
+h2 {
+	font-size: 4rem;
+	line-height: 130%;
+	letter-spacing: -0.025rem;
+}
+h3 {
+	font-size: 2.4rem;
+	line-height: 140%;
+	letter-spacing: 0.04rem;
+}
+h4 {
+	font-size: 2rem;
+	line-height: 140%;
+	letter-spacing: 0;
+}
+
+.subtitle {
+	font-family: $fontFamily_body;
+	font-weight: 400;
+	color: $color_textSubtle;
+	text-transform: none;
+}
+
+//body
+
+p {
+	font-family: $fontFamily_body;
+	font-size: $fontSize_body;
+	font-weight: 400;
+	line-height: 160%;
+	color: $color_textBody;
+
+	.caption {
+		@extend p;
+		font-size: $fontSize_bodySmall;
+		line-height: 170%;
+	}
+}
+
+small {
+	@extend p;
+	font-size: $fontSize_bodySmall;
+	line-height: 170%;
+}
+
+//links
+a {
+	color: $color_textLink;
+	text-decoration: none;
+	transition: color 0.25s ease-in-out;
+	&:hover {
+		color: darken($color_textLink, 10%);
+	}
+}

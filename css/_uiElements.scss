@@ -1,0 +1,59 @@
+//buttons
+
+.button {
+	background: $button_bg;
+	@include flex(row, center, center);
+
+	font-family: $button_fontFamily;
+	font-weight: $button_fontWeight;
+	font-size: $button_fontSize;
+	color: $button_textColor;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	letter-spacing: 0.02rem;
+	padding: $button_padding;
+	height: $button_height;
+	border-radius: $radius;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background: lighten($button_bg, 5%);
+		color: $button_textColor;
+	}
+	&:active {
+		transform: scale(0.95);
+		background: darken($button_bg, 5%);
+	}
+
+	&--outline {
+		background: $button_outline_bg;
+		color: $button_outline_textColor;
+		border: $button_border;
+
+		&:hover {
+			background: $button_bg;
+			color: $button_textColor;
+		}
+	}
+}
+
+//forms
+input {
+	background: $input_bg_default;
+	color: $color_textBody;
+	font-size: $fontSize_body;
+	border: $input_border_default;
+	height: $uiElement_height;
+	border-radius: $radius;
+	padding: $input_padding;
+	box-shadow: $input_shadow_default;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+	&::placeholder {
+		color: $input_placeholder;
+	}
+
+	&:hover {
+	}
+}

@@ -2,7 +2,7 @@
 
 /* Navigation styles--------------------------------------------*/
 
-nav {
+.nav {
 	position: fixed;
 	z-index: 9999;
 	padding-top: var(--large);
@@ -11,18 +11,18 @@ nav {
 	margin: 0;
 }
 
-nav ul {
+.nav ul {
 	padding: 0;
 	margin: 0;
 }
 
-nav ul li {
+.nav ul li {
 	display: inline-flex;
 	padding: 0;
 	margin: 0;
 }
 
-.nav-item {
+.nav .nav-navItem {
 	/* background: pink; */
 	display: flex;
 	flex-direction: row;
