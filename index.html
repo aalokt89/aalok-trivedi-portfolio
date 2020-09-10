@@ -13,22 +13,20 @@
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/main-styles.css" />
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<!-- Navigation ---------------------------------------- -->
-		<nav id="main-nav">
+		<nav id="main-nav" class="nav">
 			<ul>
-				<li>
-					<a id="nav-work" href="#my-work" class="nav-item active"> Work</a>
+				<li class="nav__navItem">
+					<a id="nav-work" href="#my-work" class="nav__navLink nav__navLink--active"> Work</a>
 				</li>
-				<li>
-					<a id="nav-about" href="#about-me" class="nav-item">About Me</a>
+				<li class="nav__navItem">
+					<a id="nav-about" href="#about-me" class="nav__navLink">About Me</a>
 				</li>
-				<li>
-					<a id="nav-contact" href="#contact-me" class="nav-item">Contact Me</a>
+				<li class="nav__navItem">
+					<a id="nav-contact" href="#contact-me" class="nav__navLink">Contact Me</a>
 				</li>
 			</ul>
 		</nav>
@@ -36,44 +34,40 @@
 		<!-- Intro Header ---------------------------------------- -->
 
 		<header id="intro-header">
-			<a id="logo" href="/"><img src="images/aalok_logo.svg" alt="Aalok Trivedi Logo" /></a>
+			<a id="logo" class="logo" href="/"><img src="images/aalok_logo.svg" alt="Aalok Trivedi Logo" /></a>
 
 			<h1>Hello! My name is Aalok Trivedi, and I'm a UX Designer.</h1>
 
 			<h2 class="subtitle">I solve human problems with simple, elegant, and beautiful solutions.</h2>
 
-			<a href="#contact-me" class="button button__outline">Let's work together</a>
+			<a href="#contact-me" class="button button--outline">Let's work together</a>
 		</header>
 
 		<main class="main-content">
 			<!-- Projects---------------------------------------- -->
 
-			<section id="my-work" class="project-section container-row">
-				<a href="#" id="project-1" class="project-cover">
-					<div class="project-img-container">
-						<img
-							class="project-cover-img"
-							src="images/project-images/covers/hinge_cover.png"
-							alt="Hinge App"
-						/>
+			<section id="my-work" class="projects container-row">
+				<a href="#" id="project-1" class="projects__cover">
+					<div class="projects__imgContainer">
+						<img class="projects__img" src="images/project-images/covers/hinge_cover.png" alt="Hinge App" />
 					</div>
 
-					<div class="title-block">
+					<div class="projects__titleBlock">
 						<h3>Hinge</h3>
 						<p>Designing a dating app to make connecting to humans feel human.</p>
 					</div>
 				</a>
 
-				<a href="#" id="project-2" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-2" class="projects__cover">
+					<div class="projects__imgContainer">
 						<img
-							class="project-cover-img"
+							class="projects__img"
 							src="images/project-images/covers/dc-metro-app-cover.png"
 							alt="Dc Metro App"
 						/>
 					</div>
 
-					<div class="title-block">
+					<div class="projects__titleBlock">
 						<h3>DC Metro</h3>
 						<p>
 							How do you design for preparedness and confidence? Improving the DC Metro app for a
@@ -82,31 +76,31 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-3" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-3" class="projects__cover">
+					<div class="projects__imgContainer">
 						<img
-							class="project-cover-img"
+							class="projects__img"
 							src="images/project-images/covers/postHawk_cover.png"
 							alt="Post Hawk App"
 						/>
 					</div>
 
-					<div class="title-block">
+					<div class="projects__titleBlock">
 						<h3>Post Hawk</h3>
 						<p>Helping businesses track and analyze their shipping problem areas.</p>
 					</div>
 				</a>
 
-				<a href="#" id="project-4" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-4" class="projects__cover">
+					<div class="projects__imgContainer">
 						<img
-							class="project-cover-img"
+							class="projects__img"
 							src="images/project-images/covers/ayuda-cover.png"
 							alt="Ayuda Website"
 						/>
 					</div>
 
-					<div class="title-block">
+					<div class="projects__titleBlock">
 						<h3>Ayuda</h3>
 						<p>
 							Redesigning a nonprofit that helps immigrants gain access to legal, social, and language
@@ -115,31 +109,31 @@
 					</div>
 				</a>
 
-				<a href="#" id="project-5" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-5" class="projects__cover">
+					<div class="projects__imgContainer">
 						<img
-							class="project-cover-img"
+							class="projects__img"
 							src="images/project-images/covers/ftc-cover.png"
 							alt="Federal Trade Commission Website"
 						/>
 					</div>
 
-					<div class="title-block">
+					<div class="projects__titleBlock">
 						<h3>Federal Trade Commision</h3>
 						<p>Redesigning the FTC website to to better serve their target audiences.</p>
 					</div>
 				</a>
 
-				<a href="#" id="project-6" class="project-cover">
-					<div class="project-img-container">
+				<a href="#" id="project-6" class="projects__cover">
+					<div class="projects__imgContainer">
 						<img
-							class="project-cover-img"
+							class="projects__img"
 							src="images/project-images/covers/strypes-cover.png"
 							alt="Bag & Accessory Kiosk"
 						/>
 					</div>
 
-					<div class="title-block">
+					<div class="projects__titleBlock">
 						<h3>Bag & acessory Kiosk</h3>
 						<p>
 							Designing a point-of-sales tool to help customers customize and order their product, right
@@ -152,9 +146,9 @@
 			<!-- About me ---------------------------------------- -->
 
 			<section id="about-me" class="container-row">
-				<div class="text-block-container">
-					<div class="about-me-block">
-						<div class="image-block">
+				<div class="content__container">
+					<div class="aboutMe__block">
+						<div class="aboutMe__imgContainer">
 							<img
 								src="images/aalok-trivedi-profilePic.png"
 								id="aalok-headshot"
@@ -163,7 +157,7 @@
 						</div>
 
 						<div>
-							<h1 class="hero-heading">About Me</h1>
+							<h1 class="heroHeading">About Me</h1>
 							<p>
 								Welcome! I'm a User Experience Designer based in the D.C. area. Previously the lead
 								designer for Hinge, I currently freelance and design goal-oriented, human-centric
@@ -183,36 +177,34 @@
 						</div>
 					</div>
 
-					<ul class="social-section">
+					<ul class="socialLinks">
 						<li>
-							<a href="https://www.linkedin.com/in/aalok-trivedi/" target="_blank" class="social-link"
-								><span class="social-icon"
-									><img src="images/icons/linkedin-16.svg" alt="linkedIn icon" />
-								</span>
+							<a
+								href="https://www.linkedin.com/in/aalok-trivedi/"
+								target="_blank"
+								class="sociaLinks__link linkedin"
+							>
 								LinkedIn
 							</a>
 						</li>
 						<li>
-							<a href="https://dribbble.com/aalok-trivedi" target="_blank" class="social-link"
-								><span class="social-icon"
-									><img src="images/icons/dribbble-16.svg" alt="Dribbble icon" />
-								</span>
+							<a
+								href="https://dribbble.com/aalok-trivedi"
+								target="_blank"
+								class="sociaLinks__link dribbble"
+							>
 								Dribbble
 							</a>
 						</li>
 						<li>
-							<a href="#" class="social-link"
-								><span class="social-icon"
-									><img src="images/icons/behance-16.svg" target="_blank" alt="Behance icon" />
-								</span>
-								Behance
-							</a>
+							<a href="#" class="sociaLinks__link behance"> Behance </a>
 						</li>
 						<li>
-							<a href="https://logopond.com/aalok89/profile/55213" target="_blank" class="social-link"
-								><span class="social-icon"
-									><img src="images/icons/logopond-16.svg" target="_blank" alt="Logopond icon" />
-								</span>
+							<a
+								href="https://logopond.com/aalok89/profile/55213"
+								target="_blank"
+								class="sociaLinks__link logopond"
+							>
 								Logopond
 							</a>
 						</li>
@@ -223,7 +215,7 @@
 			<!-- Contact me ---------------------------------------- -->
 
 			<section id="contact-me" class="container-row">
-				<div class="text-block-container">
+				<div class="content__container">
 					<h1 class="hero-heading">Let's build something great together!</h1>
 					<p>
 						I’m available for new projects, and I’m happy to answer any of your questions. Let’s work
@@ -285,19 +277,11 @@
 			</section>
 		</main>
 
+		<!-- Scripts -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="js/js.js" type="text/javascript"></script>
 
-		<!-- <script>
-			// Add active class to the current button (highlight it)
-			var header = document.getElementById('main-nav');
-			var navItems = header.getElementsByClassName('nav-item');
-			for (var i = 0; i < navItems.length; i++) {
-				navItems[i].addEventListener('click', function () {
-					var current = document.getElementsByClassName('active');
-					current[0].className = current[0].className.replace(' active', '');
-					this.className += ' active';
-				});
-			}
-		</script> -->
+		<!-- ------- -->
 	</body>
 </html>

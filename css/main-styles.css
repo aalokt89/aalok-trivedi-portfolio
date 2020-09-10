@@ -46,7 +46,7 @@ h1 {
 	letter-spacing: 0.1px;
 }
 
-.hero-heading {
+.heroHeading {
 	font-size: 6rem;
 	line-height: 110%;
 	margin: var(--large) 0;
@@ -134,8 +134,7 @@ ul {
 	margin-left: 420px;
 }
 
-.text-block-container {
-	width: 100%;
+.content__container {
 	max-width: 656px;
 }
 
@@ -159,14 +158,13 @@ ul {
 	background-size: 32px 32px;
 }
 
-.about-me-block {
+.aboutMe__block {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: var(--medium);
 }
 
-.image-block {
-	display: grid;
+.aboutMe__imgContainer {
 	width: 120px;
 	height: 120px;
 }

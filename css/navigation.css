@@ -2,7 +2,7 @@
 
 /* Navigation styles--------------------------------------------*/
 
-nav {
+.nav {
 	position: fixed;
 	z-index: 9999;
 	padding-top: var(--large);
@@ -16,13 +16,13 @@ nav ul {
 	margin: 0;
 }
 
-nav ul li {
+.nav__navItem {
 	display: inline-flex;
 	padding: 0;
 	margin: 0;
 }
 
-.nav-item {
+.nav__navLink {
 	/* background: pink; */
 	display: flex;
 	flex-direction: row;
@@ -41,15 +41,15 @@ nav ul li {
 	transition: opacity 0.2s;
 }
 
-.nav-item:hover {
+.nav__navLink:hover {
 	opacity: 1;
 }
-.active {
+.nav__navLink--active {
 	opacity: 1;
 	border-bottom: 2px solid var(--primary-navy);
 }
 
-.nav-item::before {
+.nav__navLink::before {
 	content: '';
 	width: 24px;
 	height: 24px;
@@ -67,7 +67,7 @@ nav ul li {
 
 /* Media queries */
 @media screen and (max-width: 1024px) {
-	nav {
+	.nav {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -89,13 +89,13 @@ nav ul li {
 		margin: 0;
 	}
 
-	nav ul li {
+	.nav__navItem {
 		flex-grow: 1;
 		height: 100%;
 		padding: 0;
 	}
 
-	.nav-item {
+	.nav__navLink {
 		width: 100%;
 		flex-direction: column;
 		font-size: 14px;
@@ -109,7 +109,7 @@ nav ul li {
 		padding: 0;
 	}
 
-	.active {
+	.nav__navLink--active {
 		border-bottom: 0;
 		border-top: 2px solid var(--primary-navy);
 	}
@@ -117,13 +117,13 @@ nav ul li {
 
 /* Tablet portrait */
 @media screen and (max-width: 768px) {
-	nav {
+	.nav {
 		padding: 0;
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.nav-item {
+	.nav__navLink {
 		font-size: 12px;
 	}
 }

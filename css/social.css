@@ -1,4 +1,4 @@
-.social-section {
+.socialLinks {
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -7,16 +7,16 @@
 	margin-top: var(--large);
 }
 
-.social-section li {
+.socialLinks li {
 	list-style: none;
 	margin-right: var(--small);
 }
 
-.social-section li:last-child {
+.socialLinks li:last-child {
 	margin-right: 0;
 }
 
-.social-link {
+.sociaLinks__link {
 	display: inline-flex;
 	flex-direction: row;
 	align-items: center;
@@ -33,21 +33,37 @@
 	transition: opacity 0.3s, background 0.3s;
 }
 
-.social-icon {
+.sociaLinks__link::before {
+	content: '';
 	width: 24px;
+	height: 24px;
 	margin-right: var(--small);
+	align-self: center;
 }
 
-.social-icon img {
-	width: 24px;
+.linkedin::before {
+	background: url('../images/icons/linkedin-16.svg') no-repeat;
+	background-size: 24px;
+}
+.dribbble::before {
+	background: url('../images/icons/dribbble-16.svg') no-repeat;
+	background-size: 24px;
+}
+.behance::before {
+	background: url('../images/icons/behance-16.svg') no-repeat;
+	background-size: 24px;
+}
+.logopond::before {
+	background: url('../images/icons/logopond-16.svg') no-repeat;
+	background-size: 24px;
 }
 
-.social-link:hover,
-.social-link:active {
+.sociaLinks__link:hover,
+.sociaLinks__link:active {
 	opacity: 1;
 	background: rgba(38, 43, 98, 0.03);
 }
 
-.social-section .social-icon {
+.socialLinks .socialLinks__icon {
 	padding-right: var(--small);
 }

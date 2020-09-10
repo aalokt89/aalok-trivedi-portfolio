@@ -1,13 +1,13 @@
 //navigation script
 
 $(document).ready(function () {
-	var menuLink = $('#main-nav li a');
+	var menuLink = $('.nav__navLink');
 
 	//smooth scrolling when clicked
 	menuLink.click(function (e) {
 		e.preventDefault();
 
-		$('html, body ').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+		$('html, body ').animate({ scrollTop: $(this.hash).offset().top }, 500);
 	});
 
 	//switch active link
@@ -19,8 +19,8 @@ $(document).ready(function () {
 			var sectionOffset = $(this.hash).offset().top;
 
 			if (sectionOffset <= scrollBarLocation) {
-				$(menuLink).removeClass('active');
-				$(this).addClass('active');
+				$(menuLink).removeClass('nav__navLink--active');
+				$(this).addClass('nav__navLink--active');
 			}
 		});
 	});
