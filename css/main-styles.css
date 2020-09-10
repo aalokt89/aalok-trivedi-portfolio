@@ -67,6 +67,10 @@ h4 {
 	line-height: 150%;
 }
 
+.headingPeriod {
+	color: var(--secondary-turquoise);
+}
+
 .subtitle {
 	font-family: 'Merriweather';
 	font-weight: normal;
@@ -134,6 +138,14 @@ ul {
 	margin-left: 420px;
 }
 
+.sectionContent {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: var(--x-large);
+}
+
 .content__container {
 	max-width: 656px;
 }
@@ -146,7 +158,7 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 128px var(--x-large);
+	/* padding: 128px var(--x-large); */
 }
 
 #about-me {
@@ -156,6 +168,69 @@ ul {
 	background-color: rgba(47, 195, 203, 0.05);
 	background-position: 0 0, 16px 16px;
 	background-size: 32px 32px;
+}
+
+.sectionHeader {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	width: 100%;
+	height: 360px;
+}
+
+.sectionHeader__imgContainer {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	background: var(--secondary-turquoise);
+}
+
+.sectionHeader__titleBlock {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	background: var(--primary-navy);
+}
+.sectionHeader h1 {
+	font-size: 8.8rem;
+	color: var(--light);
+	margin-left: -3.4rem;
+	position: relative;
+}
+
+.sectionHeader--aboutMe .sectionHeader__imgContainer img {
+	width: 100%;
+	align-self: flex-end;
+	mix-blend-mode: multiply;
+}
+.sectionHeader--aboutMe .sectionHeader__imgContainer::before {
+	content: '';
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	width: 40px;
+	height: 40px;
+	background: url('../images/dot-pattern-4x4.svg');
+}
+
+.sectionHeader--aboutMe h1::before {
+	content: '';
+	position: absolute;
+	top: -64px;
+	left: 8px;
+	width: 88px;
+	height: 28px;
+	background: url('../images/dot-pattern-8x3.svg') no-repeat;
+}
+
+.sectionHeader--aboutMe .sectionHeader__titleBlock::before {
+	content: '';
+	position: absolute;
+	top: 64px;
+	right: 0;
+	width: 184px;
+	height: 460px;
+	background: url('../images/dot-pattern-16x40.svg') no-repeat;
 }
 
 .aboutMe__block {
@@ -173,12 +248,10 @@ ul {
 }
 
 #contact-me {
-	/* height: auto; */
-	padding-bottom: 200px;
-	background-image: url('../images/aalok-contact-illo.svg');
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	background-size: 500px;
+	background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%);
+	background-color: rgba(38, 43, 98, 0.02);
+	background-position: 0 0, 16px 16px;
+	background-size: 32px 32px;
 }
 /* Media queries---------------------------------- */
 
