@@ -55,5 +55,11 @@ input {
 	}
 
 	&:hover {
+		background: white;
+		box-shadow: $input_shadow_focus;
+	}
+	&:focus {
+		@extend input:hover;
+		border: $input_border_focus;
 	}
 }

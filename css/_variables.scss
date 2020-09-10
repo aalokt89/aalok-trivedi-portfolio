@@ -83,6 +83,8 @@ $button_border: $button_borderWidth solid $button_bg;
 //inputs
 $input_bg_default: $color-input;
 $input_border_default: 0.1rem solid rgba($color_primaryNavy, 0);
+$input_border_focus: 0.1rem solid rgba($color_primaryNavy, 1);
 $input_shadow_default: 0 0 0 4px rgba(216, 220, 247, 0);
+$input_shadow_focus: 0 0 0 4px rgba(216, 220, 247, 1);
 $input_placeholder: $color_textSubtle;
 $input_padding: $spacing_base;

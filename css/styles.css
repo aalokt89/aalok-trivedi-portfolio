@@ -169,4 +169,14 @@ input::-ms-input-placeholder {
 input::placeholder {
   color: #8c8ca1;
 }
+
+input:hover, input:focus {
+  background: white;
+  -webkit-box-shadow: 0 0 0 4px #d8dcf7;
+          box-shadow: 0 0 0 4px #d8dcf7;
+}
+
+input:focus {
+  border: 0.1rem solid #262b62;
+}
 /*# sourceMappingURL=styles.css.map */
