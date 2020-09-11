@@ -175,6 +175,7 @@ ul {
 	grid-template-columns: 300px 1fr;
 	width: 100%;
 	height: 360px;
+	mix-blend-mode: multiply;
 }
 
 .sectionHeader__imgContainer {
@@ -198,8 +199,11 @@ ul {
 	position: relative;
 }
 
-.sectionHeader--aboutMe .sectionHeader__imgContainer img {
+.sectionHeader .sectionHeader__imgContainer img {
 	width: 100%;
+}
+
+.sectionHeader--aboutMe .sectionHeader__imgContainer img {
 	align-self: flex-end;
 	mix-blend-mode: multiply;
 }
@@ -239,19 +243,36 @@ ul {
 	grid-gap: var(--medium);
 }
 
-.aboutMe__imgContainer {
-	width: 120px;
-	height: 120px;
-}
-#aalok-headshot {
-	width: 100%;
-}
+/* Contact section-------------------------------------------------------- */
 
-#contact-me {
+.sectionContact {
 	background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%);
-	background-color: rgba(38, 43, 98, 0.02);
+	background-color: rgba(255, 208, 90, 0.02);
 	background-position: 0 0, 16px 16px;
 	background-size: 32px 32px;
+	position: relative;
+}
+
+.sectionContent--contactMe {
+	position: relative;
+}
+.sectionContent--contactMe::after {
+	content: '';
+	background: url('/images/aalok-contact-illo.svg') no-repeat;
+	position: absolute;
+	top: 0;
+}
+
+.sectionHeader--contactMe .sectionHeader__imgContainer {
+	background: var(--tertiary-maize);
+}
+
+.sectionHeader--contactMe .sectionHeader__titleBlock {
+	background: var(--tertiary-tangerine);
+}
+
+.sectionHeader--contactMe .sectionHeader__titleBlock .headingPeriod {
+	color: var(--tertiary-maize);
 }
 /* Media queries---------------------------------- */
 
