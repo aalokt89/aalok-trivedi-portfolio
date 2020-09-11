@@ -5,7 +5,8 @@
 .projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-	gap: 0;
+	gap: var(--medium);
+	padding: var(--x-large);
 }
 
 .projects__cover {
