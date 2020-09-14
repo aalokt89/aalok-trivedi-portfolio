@@ -1,10 +1,66 @@
 @import 'global-styles.css';
 
-#about-section {
+/* #about-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	padding: var(--x-large);
+} */
+
+.sectionAbout {
+	/* background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%),
+		radial-gradient(var(--primary-navy-300) 2%, transparent 2%); */
+	background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%);
+	background-color: rgba(47, 195, 203, 0.05);
+	background-position: 0 0, 16px 16px;
+	background-size: 32px 32px;
+}
+.sectionHeader--aboutMe .sectionHeader__imgContainer {
+	background: var(--tertiary-maize);
+}
+.sectionHeader--aboutMe .sectionHeader__imgContainer img {
+	align-self: center;
+	margin-left: -48px;
+	width: 310px;
+}
+.sectionHeader--aboutMe .sectionHeader__imgContainer::before {
+	content: '';
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	width: 40px;
+	height: 40px;
+	background: url('../images/dot-pattern-4x4.svg');
+}
+
+.sectionHeader--aboutMe h1::before {
+	content: '';
+	position: absolute;
+	top: -64px;
+	left: 8px;
+	width: 88px;
+	height: 28px;
+	background: url('../images/dot-pattern-8x3.svg') no-repeat;
+}
+
+.sectionHeader--aboutMe .headingPeriod {
+	color: var(--tertiary-maize);
+}
+
+.sectionHeader--aboutMe .sectionHeader__titleBlock::before {
+	content: '';
+	position: absolute;
+	top: 64px;
+	right: 0;
+	width: 184px;
+	height: 460px;
+	background: url('../images/dot-pattern-16x40.svg') no-repeat;
+}
+
+.aboutMe__block {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: var(--medium);
 }

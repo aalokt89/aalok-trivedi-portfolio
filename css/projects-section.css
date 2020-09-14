@@ -5,17 +5,18 @@
 .projects {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-	gap: var(--medium);
+	grid-gap: var(--medium);
 	padding: var(--x-large);
 }
 
 .projects__cover {
 	display: grid;
 	grid-template-rows: 3fr 1fr;
-	gap: 0;
+	grid-gap: 0;
 	color: var(--dark);
 	text-decoration: none;
 	height: 75vh;
+	border-radius: var(--radius);
 }
 
 .projects__imgContainer {

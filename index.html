@@ -33,14 +33,19 @@
 
 		<!-- Intro Header ---------------------------------------- -->
 
-		<header id="intro-header">
-			<a id="logo" class="logo" href="/"><img src="images/aalok_logo.svg" alt="Aalok Trivedi Logo" /></a>
+		<header id="intro-header" class="introHeader">
+			<div class="introHeader__headingBlock">
+				<a id="logo" class="logo" href="/"><img src="images/aalok_logo.svg" alt="Aalok Trivedi Logo" /></a>
 
-			<h1>Hello! My name is Aalok Trivedi, and I'm a UX Designer<span class="headingPeriod">.</span></h1>
+				<h1>Hello! My name is Aalok Trivedi, and I'm a UX Designer<span class="headingPeriod">.</span></h1>
 
-			<h2 class="subtitle">I solve human problems with simple, elegant, and beautiful solutions.</h2>
+				<h2 class="subtitle">I solve human problems with simple, elegant, and beautiful solutions.</h2>
+			</div>
 
-			<a href="#contact-me" class="button button--outline">Let's work together</a>
+			<div class="introHeader__ctaBlock">
+				<a href="#contact-me" class="button button--outline">Let's work together</a>
+				<img class="headshot" src="/images/aaloktrivedi-headshot1.png" alt="Aalok Trivedi: UX Designer" />
+			</div>
 		</header>
 
 		<main class="main-content">
@@ -62,6 +67,7 @@
 					<div class="projects__imgContainer">
 						<img
 							class="projects__img"
+							loading="lazy"
 							src="images/project-images/covers/dc-metro-app-cover.png"
 							alt="Dc Metro App"
 						/>
@@ -80,6 +86,7 @@
 					<div class="projects__imgContainer">
 						<img
 							class="projects__img"
+							loading="lazy"
 							src="images/project-images/covers/postHawk_cover.png"
 							alt="Post Hawk App"
 						/>
@@ -95,6 +102,7 @@
 					<div class="projects__imgContainer">
 						<img
 							class="projects__img"
+							loading="lazy"
 							src="images/project-images/covers/ayuda-cover.png"
 							alt="Ayuda Website"
 						/>
@@ -113,6 +121,7 @@
 					<div class="projects__imgContainer">
 						<img
 							class="projects__img"
+							loading="lazy"
 							src="images/project-images/covers/ftc-cover.png"
 							alt="Federal Trade Commission Website"
 						/>
@@ -128,6 +137,7 @@
 					<div class="projects__imgContainer">
 						<img
 							class="projects__img"
+							loading="lazy"
 							src="images/project-images/covers/strypes-cover.png"
 							alt="Bag & Accessory Kiosk"
 						/>
@@ -148,7 +158,7 @@
 			<section id="about-me" class="container-row sectionAbout">
 				<div class="sectionHeader sectionHeader--aboutMe">
 					<div class="sectionHeader__imgContainer">
-						<img src="/images/aaloktrivedi-headshot1.png" alt="Aalok Trivedi: UX Designer" />
+						<img src="/images/aalok_hello-illo2.svg" alt="Aalok Trivedi, Hello" />
 					</div>
 
 					<div class="sectionHeader__titleBlock">
@@ -174,8 +184,9 @@
 								<p>
 									I have experience in UX research, persona development, wireframing, prototyping,
 									interaction design, UI design, design system development, and more. If you’d like to
-									know more about what I do or work together, <a href="#contact-me">contact me!</a> I
-									am available for freelance, contract, and full-time opportunities.
+									know more about what I do or work together,
+									<a class="textLink" href="#contact-me">contact me!</a> I am available for freelance,
+									contract, and full-time opportunities.
 								</p>
 							</div>
 						</div>
@@ -221,7 +232,7 @@
 			<section id="contact-me" class="container-row sectionContact">
 				<div class="sectionHeader sectionHeader--contactMe">
 					<div class="sectionHeader__imgContainer">
-						<img src="/images/aaloktrivedi-headshot1.png" alt="Aalok Trivedi: UX Designer" />
+						<img src="/images/aalok-contact-illo.svg" alt="Aalok Trivedi, contact me" />
 					</div>
 
 					<div class="sectionHeader__titleBlock">
@@ -240,7 +251,7 @@
 						<form id="contact-form" class="form">
 							<div class="name-email-container">
 								<div class="form__item">
-									<label for="first-name">First Name</label>
+									<label for="first-name">Name</label>
 									<input
 										class="form__input"
 										type="text"

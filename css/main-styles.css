@@ -1,8 +1,10 @@
 @import 'global-styles.css';
 @import 'navigation.css';
+@import 'buttons.css';
 @import 'intro-header.css';
 @import 'projects-section.css';
-@import 'buttons.css';
+@import 'about-section.css';
+@import 'contact-section.css';
 @import 'form.css';
 @import 'social.css';
 
@@ -125,7 +127,7 @@ a {
 	transition: filter 0.2s ease-in-out;
 	transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
 }
-a:hover {
+a.textLink:hover {
 	-webkit-filter: brightness(85%);
 	filter: brightness(85%);
 }
@@ -150,26 +152,6 @@ ul {
 	max-width: 656px;
 }
 
-/* About section-------------------------------------------------------- */
-
-#about-me,
-#contact-me {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/* padding: 128px var(--x-large); */
-}
-
-#about-me {
-	/* background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%),
-		radial-gradient(var(--primary-navy-300) 2%, transparent 2%); */
-	background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%);
-	background-color: rgba(47, 195, 203, 0.05);
-	background-position: 0 0, 16px 16px;
-	background-size: 32px 32px;
-}
-
 .sectionHeader {
 	display: grid;
 	grid-template-columns: 300px 1fr;
@@ -183,8 +165,12 @@ ul {
 	flex-direction: row;
 	position: relative;
 	background: var(--secondary-turquoise);
+	overflow: hidden;
 }
 
+.sectionHeader__imgContainer img {
+	width: 100%;
+}
 .sectionHeader__titleBlock {
 	display: flex;
 	position: relative;
@@ -199,81 +185,19 @@ ul {
 	position: relative;
 }
 
-.sectionHeader .sectionHeader__imgContainer img {
-	width: 100%;
-}
+/* About section-------------------------------------------------------- */
 
-.sectionHeader--aboutMe .sectionHeader__imgContainer img {
-	align-self: flex-end;
-	mix-blend-mode: multiply;
-}
-.sectionHeader--aboutMe .sectionHeader__imgContainer::before {
-	content: '';
-	position: absolute;
-	bottom: 16px;
-	left: 16px;
-	width: 40px;
-	height: 40px;
-	background: url('../images/dot-pattern-4x4.svg');
-}
-
-.sectionHeader--aboutMe h1::before {
-	content: '';
-	position: absolute;
-	top: -64px;
-	left: 8px;
-	width: 88px;
-	height: 28px;
-	background: url('../images/dot-pattern-8x3.svg') no-repeat;
-}
-
-.sectionHeader--aboutMe .sectionHeader__titleBlock::before {
-	content: '';
-	position: absolute;
-	top: 64px;
-	right: 0;
-	width: 184px;
-	height: 460px;
-	background: url('../images/dot-pattern-16x40.svg') no-repeat;
-}
-
-.aboutMe__block {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: var(--medium);
+#about-me,
+#contact-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* padding: 128px var(--x-large); */
 }
 
 /* Contact section-------------------------------------------------------- */
 
-.sectionContact {
-	background-image: radial-gradient(var(--primary-navy) 2%, transparent 2%);
-	background-color: rgba(255, 208, 90, 0.02);
-	background-position: 0 0, 16px 16px;
-	background-size: 32px 32px;
-	position: relative;
-}
-
-.sectionContent--contactMe {
-	position: relative;
-}
-.sectionContent--contactMe::after {
-	content: '';
-	background: url('/images/aalok-contact-illo.svg') no-repeat;
-	position: absolute;
-	top: 0;
-}
-
-.sectionHeader--contactMe .sectionHeader__imgContainer {
-	background: var(--tertiary-maize);
-}
-
-.sectionHeader--contactMe .sectionHeader__titleBlock {
-	background: var(--tertiary-tangerine);
-}
-
-.sectionHeader--contactMe .sectionHeader__titleBlock .headingPeriod {
-	color: var(--tertiary-maize);
-}
 /* Media queries---------------------------------- */
 
 @media screen and (max-width: 1024px) {

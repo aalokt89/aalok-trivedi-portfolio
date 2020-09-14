@@ -1,57 +1,81 @@
 @import 'global-styles.css';
 
-#intro-header {
-	display: flex;
+.introHeader {
+	display: grid;
+	grid-template-rows: auto 1fr;
 	position: relative;
-	flex-direction: column;
 	position: fixed;
-	padding: 48px;
-	padding-top: 132px;
-	/* justify-content: center; */
+	padding-top: 96px;
 	height: 100%;
 	width: 420px;
-	background: var(--light) url('../images/aalok-hello-illo.svg') bottom left no-repeat;
-	background-size: 300px;
-
+	background: var(--light);
 	box-shadow: 4px 0px 32px rgba(19, 22, 70, 0.07);
 	overflow: hidden;
 }
 
-/* #intro-header:after {
-	content: '';
-	position: absolute;
-	bottom: 0px;
-	left: -24px;
-	width: 300px;
-	height: 300px;
-	background: url('../images/aalok-hello-illo.svg') bottom left no-repeat;
-} */
-
-.intro-illo {
-	bottom: 0px;
-	left: -24px;
-	height: 300px;
-	background: url('../images/aalok-hello-illo.svg') bottom left no-repeat;
-	transform: translateX(-64px) translateY(64px);
+.introHeader__headingBlock {
+	padding: 48px 48px var(--large) 48px;
 }
 
-#intro-header h1 {
-	font-size: 3.4rem;
-	margin-bottom: 24px;
-	margin-top: var(--medium);
-	line-height: 130%;
-}
-
-#intro-header h2 {
+.introHeader__headingBlock .subtitle {
 	font-size: 2rem;
-
-	margin-bottom: 48px;
-
+	margin-bottom: 0;
 	margin-top: 0;
 }
 
-#intro-header .button {
-	align-self: flex-start;
+.introHeader__headingBlock h1 {
+	font-size: 3.4rem;
+	margin-bottom: 24px;
+	margin-top: var(--medium);
+	line-height: 120%;
+}
+
+.introHeader__ctaBlock {
+	display: flex;
+	flex-direction: column;
+	padding: var(--large) 48px 48px 48px;
+	background: var(--secondary-turquoise);
+	position: relative;
+}
+
+.introHeader__ctaBlock::before {
+	content: '';
+	width: 88px;
+	height: 232px;
+	background: url('../images/dotPattern_8x20_navy.svg') no-repeat;
+	position: absolute;
+	top: 128px;
+	left: 0;
+	opacity: 0.4;
+}
+
+.introHeader__ctaBlock::after {
+	content: '';
+	width: 64px;
+	height: 16px;
+	background: url('../images/dotPattern_6x2_yellow.svg') no-repeat;
+	position: absolute;
+	bottom: 150px;
+	right: 72px;
+}
+
+.introHeader__ctaBlock .button {
+	align-self: center;
+	background: transparent;
+	border-color: var(--light);
+	color: var(--light);
+	width: 100%;
+}
+
+.introHeader__ctaBlock .button:hover {
+	background: var(--light);
+	color: var(--primary-navy);
+}
+
+.introHeader__ctaBlock .headshot {
+	width: 100%;
+	mix-blend-mode: multiply;
+	margin-left: -32px;
 }
 
 /* Small screens and tablet landscape */
