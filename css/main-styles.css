@@ -161,16 +161,16 @@ ul {
 }
 
 .sectionHeader__imgContainer {
-	display: flex;
-	flex-direction: row;
+	/* display: flex;
+	flex-direction: row; */
 	position: relative;
 	background: var(--secondary-turquoise);
 	overflow: hidden;
 }
 
-.sectionHeader__imgContainer img {
+/* .sectionHeader__imgContainer img {
 	width: 100%;
-}
+} */
 .sectionHeader__titleBlock {
 	display: flex;
 	position: relative;

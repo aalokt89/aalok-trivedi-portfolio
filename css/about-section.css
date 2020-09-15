@@ -19,10 +19,12 @@
 }
 .sectionHeader--aboutMe .sectionHeader__imgContainer {
 	background: var(--tertiary-maize);
+	position: relative;
 }
 .sectionHeader--aboutMe .sectionHeader__imgContainer img {
-	align-self: center;
-	margin-left: -48px;
+	position: absolute;
+	top: 20%;
+	left: -4.8rem;
 	transform: translateX(-100%);
 	width: 310px;
 	animation: slideInFromLeft 0.5s ease-out;

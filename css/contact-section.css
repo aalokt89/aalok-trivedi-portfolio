@@ -21,7 +21,11 @@
 }
 
 .sectionHeader--contactMe .sectionHeader__imgContainer img {
+	position: absolute;
+	top: 12.4rem;
+	left: -6.4rem;
 	width: 400px;
+
 	/* align-self: flex-end; */
 	/* transform: scale(1.4); */
 	/* position: absolute;
