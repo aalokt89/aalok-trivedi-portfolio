@@ -21,15 +21,20 @@
 }
 
 .sectionHeader--contactMe .sectionHeader__imgContainer img {
-	align-self: flex-end;
-	transform: scale(1.4);
-	position: absolute;
+	width: 400px;
+	/* align-self: flex-end; */
+	/* transform: scale(1.4); */
+	/* position: absolute;
 	top: 18rem;
-	left: -2rem;
+	left: -2rem; */
+	/* animation: slideUpFromBottom 0.5s ease-out;
+	animation-delay: 1s;
+	animation-fill-mode: forwards; */
 }
 
 .sectionHeader--contactMe .sectionHeader__titleBlock {
 	background: var(--tertiary-tangerine);
+	position: relative;
 }
 
 .sectionHeader--contactMe .sectionHeader__titleBlock .headingPeriod {
@@ -49,8 +54,8 @@
 .sectionHeader--contactMe .sectionHeader__titleBlock::after {
 	content: '';
 	position: absolute;
-	top: 6.4rem;
-	right: -1.6rem;
+	top: 2.4rem;
+	right: 2.4rem;
 	width: 88px;
 	height: 16px;
 	background: url('../images/dot-pattern-8x2_white.svg') no-repeat;
@@ -64,4 +69,13 @@
 	width: 184px;
 	height: 72px;
 	background: url('../images/dot-pattern-16x40_yellow.svg') no-repeat;
+}
+
+@keyframes slideUpFromBottom {
+	0% {
+		bottom: 100%;
+	}
+	100% {
+		bottom: 0;
+	}
 }

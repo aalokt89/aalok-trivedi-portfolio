@@ -185,8 +185,6 @@ ul {
 	position: relative;
 }
 
-/* About section-------------------------------------------------------- */
-
 #about-me,
 #contact-me {
 	display: flex;
@@ -196,7 +194,7 @@ ul {
 	/* padding: 128px var(--x-large); */
 }
 
-/* Contact section-------------------------------------------------------- */
+/* animations */
 
 /* Media queries---------------------------------- */
 

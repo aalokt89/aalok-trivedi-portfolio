@@ -23,7 +23,11 @@
 .sectionHeader--aboutMe .sectionHeader__imgContainer img {
 	align-self: center;
 	margin-left: -48px;
+	transform: translateX(-100%);
 	width: 310px;
+	animation: slideInFromLeft 0.5s ease-out;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
 }
 .sectionHeader--aboutMe .sectionHeader__imgContainer::before {
 	content: '';
@@ -63,4 +67,13 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: var(--medium);
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }
