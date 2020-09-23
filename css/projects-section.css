@@ -125,6 +125,10 @@
 		display: block;
 		width: initial;
 	} */
+	.projects {
+		padding: var(--base);
+		grid-template-columns: 1fr;
+	}
 	.projects__cover {
 		height: 540px;
 	}
@@ -132,9 +136,6 @@
 
 /* mobile */
 @media screen and (max-width: 480px) {
-	#my-work {
-		display: initial;
-	}
 	.projects__imgContainer {
 		padding: var(--medium) var(--medium) var(--base) var(--medium);
 	}
